@@ -1,4 +1,4 @@
-# cid2code.txt (Version 08/23/2009)
+# cid2code.txt (Version 12/04/2015)
 #
 # The data in this table contains nineteen tab-delimited columns of
 # information. The contents of this file supplement Technical Note 
@@ -64,15 +64,15 @@
 #   use of the UTF-8, UTF-16, and UTF-32 CMap files is recommended.)
 #
 # o Column 10: Character codes for the "UniCNS-UTF8-H" and
-#   "UniCNS-UTF8-V" CMaps (Unicode 5.2 UTF-8 encoding, proportional Latin
+#   "UniCNS-UTF8-V" CMaps (Unicode 8.0 UTF-8 encoding, proportional Latin
 #   characters).
 #
 # o Column 11: Character codes for the "UniCNS-UTF16-H" and
-#   "UniCNS-UTF16-V" CMaps (Unicode 5.2 UTF-16 encoding, proportional
+#   "UniCNS-UTF16-V" CMaps (Unicode 8.0 UTF-16 encoding, proportional
 #   Latin characters).
 #
 # o Column 12: Character codes for the "UniCNS-UTF32-H" and
-#   "UniCNS-UTF32-V" CMaps (Unicode 5.2 UTF-32 encoding, proportional
+#   "UniCNS-UTF32-V" CMaps (Unicode 8.0 UTF-32 encoding, proportional
 #   Latin characters).
 #
 # o Column 13: Character codes for the "ETHK-B5-H" and "ETHK-B5-V"
@@ -109,7 +109,7 @@
 #
 CID	B5	B5pc	ETen-B5	ETenms-B5	CNS1	CNS2	CNS-EUC	UniCNS-UCS2	UniCNS-UTF8	UniCNS-UTF16	UniCNS-UTF32	ETHK-B5	HKdla-B5	HKdlb-B5	HKgccs-B5	HKm314-B5	HKm471-B5	HKscs-B5
 0	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*
-1	*	20	*	20	*	*	*	0020	20	0020	00000020	20	20	20	20	20	20	20
+1	*	20	*	20	*	*	*	0020	c2a0,20	00a0,0020	000000a0,00000020	20	20	20	20	20	20	20
 2	*	21	*	21	*	*	*	0021	21	0021	00000021	21	21	21	21	21	21	21
 3	*	22	*	22	*	*	*	0022	22	0022	00000022	22	22	22	22	22	22	22
 4	*	23	*	23	*	*	*	0023	23	0023	00000023	23	23	23	23	23	23	23
@@ -204,8 +204,8 @@ CID	B5	B5pc	ETen-B5	ETenms-B5	CNS1	CNS2	CNS-EUC	UniCNS-UCS2	UniCNS-UTF8	UniCNS-U
 93	*	7c	*	7c	*	*	*	007c	7c	007c	0000007c	7c	7c	7c	7c	7c	7c	7c
 94	*	7d	*	7d	*	*	*	007d	7d	007d	0000007d	7d	7d	7d	7d	7d	7d	7d
 95	*	7e	*	7e	*	*	*	007e	7e	007e	0000007e	7e	7e	7e	7e	7e	7e	7e
-96	*	fd	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*
-97	*	fe	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*
+96	*	fd	*	*	*	*	*	*	c2a9	00a9	000000a9	*	*	*	*	*	*	*
+97	*	fe	*	*	*	*	*	*	e284a2	2122	00002122	*	*	*	*	*	*	*
 98	*	ff	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*
 99	a140	a140	a140	*	2121	*	8ea1a1a1,a1a1,8ea1a1a1v,a1a1v	3000	e38080	3000	00003000	a140	a140	a140	a140	a140	a140	a140
 100	a141	a141	a141	*	2122	*	8ea1a1a2,a1a2,8ea1a1a2v,a1a2v	ff0c	efbc8c	ff0c	0000ff0c	a141	a141	a141	a141	a141	a141	a141
@@ -430,10 +430,10 @@ CID	B5	B5pc	ETen-B5	ETenms-B5	CNS1	CNS2	CNS-EUC	UniCNS-UCS2	UniCNS-UTF8	UniCNS-U
 319	a2a1	a2a1	a2a1	*	2341	*	8ea1a3c1,a3c1,8ea1a3c1v,a3c1v	256e	e295ae	256e	0000256e	a2a1	a2a1	a2a1	a2a1	a2a1	a2a1	a2a1
 320	a2a2	a2a2	a2a2	*	2342	*	8ea1a3c2,a3c2,8ea1a3c2v,a3c2v	2570	e295b0	2570	00002570	a2a2	a2a2	a2a2	a2a2	a2a2	a2a2	a2a2
 321	a2a3	a2a3	a2a3	*	2343	*	8ea1a3c3,a3c3,8ea1a3c3v,a3c3v	256f	e295af	256f	0000256f	a2a3	a2a3	a2a3	a2a3	a2a3	a2a3	a2a3
-322	a2a4	a2a4	a2a4	*	2344	*	8ea1a3c4,a3c4,8ea1a3c4v,a3c4v	2550	e29590	2550	00002550	a2a4	a2a4	a2a4	a2a4	a2a4	a2a4	a2a4
-323	a2a5	a2a5	a2a5	*	2345	*	8ea1a3c5,a3c5,8ea1a3c5v,a3c5v	255e	e2959e	255e	0000255e	a2a5	a2a5	a2a5	a2a5	a2a5	a2a5	a2a5
-324	a2a6	a2a6	a2a6	*	2346	*	8ea1a3c6,a3c6,8ea1a3c6v,a3c6v	256a	e295aa	256a	0000256a	a2a6	a2a6	a2a6	a2a6	a2a6	a2a6	a2a6
-325	a2a7	a2a7	a2a7	*	2347	*	8ea1a3c7,a3c7,8ea1a3c7v,a3c7v	2561	e295a1	2561	00002561	a2a7	a2a7	a2a7	a2a7	a2a7	a2a7	a2a7
+322	a2a4	a2a4	a2a4	*	2344	*	8ea1a3c4,a3c4,8ea1a3c4v,a3c4v	2550	*	*	*	a2a4	a2a4	a2a4	a2a4	a2a4	a2a4	a2a4
+323	a2a5	a2a5	a2a5	*	2345	*	8ea1a3c5,a3c5,8ea1a3c5v,a3c5v	255e	*	*	*	a2a5	a2a5	a2a5	a2a5	a2a5	a2a5	a2a5
+324	a2a6	a2a6	a2a6	*	2346	*	8ea1a3c6,a3c6,8ea1a3c6v,a3c6v	256a	*	*	*	a2a6	a2a6	a2a6	a2a6	a2a6	a2a6	a2a6
+325	a2a7	a2a7	a2a7	*	2347	*	8ea1a3c7,a3c7,8ea1a3c7v,a3c7v	2561	*	*	*	a2a7	a2a7	a2a7	a2a7	a2a7	a2a7	a2a7
 326	a2a8	a2a8	a2a8	*	2348	*	8ea1a3c8,a3c8,8ea1a3c8v,a3c8v	25e2	e297a2	25e2	000025e2	a2a8	a2a8	a2a8	a2a8	a2a8	a2a8	a2a8
 327	a2a9	a2a9	a2a9	*	2349	*	8ea1a3c9,a3c9,8ea1a3c9v,a3c9v	25e3	e297a3	25e3	000025e3	a2a9	a2a9	a2a9	a2a9	a2a9	a2a9	a2a9
 328	a2aa	a2aa	a2aa	*	234a	*	8ea1a3ca,a3ca,8ea1a3cav,a3cav	25e5	e297a5	25e5	000025e5	a2aa	a2aa	a2aa	a2aa	a2aa	a2aa	a2aa
@@ -656,7 +656,7 @@ CID	B5	B5pc	ETen-B5	ETenms-B5	CNS1	CNS2	CNS-EUC	UniCNS-UCS2	UniCNS-UTF8	UniCNS-U
 545	*	*	c6c7	*	2737	*	8ea1a7b7,a7b7,8ea1a7b7v,a7b7v	5338	e2bc96,e58cb8,ef9b97	2f16,5338,f6d7	00002f16,00005338,0000f6d7	c6c7	*	*	*	*	*	c6c7
 546	*	*	c6c8	*	273a	*	8ea1a7ba,a7ba,8ea1a7bav,a7bav	5369	e2bc99,e58da9,ef9b98	2f19,5369,f6d8	00002f19,00005369,0000f6d8	c6c8	*	*	*	*	*	c6c8
 547	*	*	c6c9	*	273c	*	8ea1a7bc,a7bc,8ea1a7bcv,a7bcv	53b6	e2bc9b,e58eb6,ef9b99	2f1b,53b6,f6d9	00002f1b,000053b6,0000f6d9	c6c9	*	*	*	*	*	c6c9
-548	*	*	c6ca	*	2742	*	8ea1a7c2,a7c2,8ea1a7c2v,a7c2v	5902,590a	e2bca1,e2bca2,e5a482,e5a48a,ef9b9a	2f21,2f22,5902,590a,f6da	00002f21,00002f22,00005902,0000590a,0000f6da	c6ca	*	*	*	*	*	c6ca
+548	*	*	c6ca	*	2742	*	8ea1a7c2,a7c2,8ea1a7c2v,a7c2v	5902,590a	e2bca1,e2bca2,e5a482,ef9b9a	2f21,2f22,5902,f6da	00002f21,00002f22,00005902,0000f6da	c6ca	*	*	*	*	*	c6ca
 549	*	*	c6cb	*	2747	*	8ea1a7c7,a7c7,8ea1a7c7v,a7c7v	5b80	e2bca7,e5ae80,ef9b9b	2f27,5b80,f6db	00002f27,00005b80,0000f6db	c6cb	*	*	*	*	*	c6cb
 550	*	*	c6cc	*	274e	*	8ea1a7ce,a7ce,8ea1a7cev,a7cev	5ddb	e2bcae,e5b79b,ef9b9c	2f2e,5ddb,f6dc	00002f2e,00005ddb,0000f6dc	c6cc	*	91b0	*	*	*	c6cc
 551	*	*	c6cd	*	2753	*	8ea1a7d3,a7d3,8ea1a7d3v,a7d3v	2f33,5e7a	e5b9ba,e2bcb3,ef9b9d	5e7a,2f33,f6dd	00005e7a,00002f33,0000f6dd	c6cd	*	*	*	*	*	c6cd
@@ -14183,9 +14183,9 @@ CID	B5	B5pc	ETen-B5	ETenms-B5	CNS1	CNS2	CNS-EUC	UniCNS-UCS2	UniCNS-UTF8	UniCNS-U
 14072	*	*	f9e6	*	*	*	*	2552	e29592	2552	00002552	f9e6	*	*	*	*	*	f9e6
 14073	*	*	f9e7	*	*	*	*	2564	e295a4	2564	00002564	f9e7	*	*	*	*	*	f9e7
 14074	*	*	f9e8	*	*	*	*	2555	e29595	2555	00002555	f9e8	*	*	*	*	*	f9e8
-14075	*	*	f9e9	*	*	*	*	*	*	*	*	f9e9	*	*	*	*	*	f9e9
-14076	*	*	f9ea	*	*	*	*	*	*	*	*	f9ea	*	*	*	*	*	f9ea
-14077	*	*	f9eb	*	*	*	*	*	*	*	*	f9eb	*	*	*	*	*	f9eb
+14075	*	*	f9e9	*	*	*	*	*	e2959e	255e	0000255e	f9e9	*	*	*	*	*	f9e9
+14076	*	*	f9ea	*	*	*	*	*	e295aa	256a	0000256a	f9ea	*	*	*	*	*	f9ea
+14077	*	*	f9eb	*	*	*	*	*	e295a1	2561	00002561	f9eb	*	*	*	*	*	f9eb
 14078	*	*	f9ec	*	*	*	*	2558	e29598	2558	00002558	f9ec	*	*	*	*	*	f9ec
 14079	*	*	f9ed	*	*	*	*	2567	e295a7	2567	00002567	f9ed	*	*	*	*	*	f9ed
 14080	*	*	f9ee	*	*	*	*	255b	e2959b	255b	0000255b	f9ee	*	*	*	*	*	f9ee
@@ -14199,7 +14199,7 @@ CID	B5	B5pc	ETen-B5	ETenms-B5	CNS1	CNS2	CNS-EUC	UniCNS-UCS2	UniCNS-UTF8	UniCNS-U
 14088	*	*	f9f6	*	*	*	*	2568	e295a8	2568	00002568	f9f6	*	*	*	*	*	f9f6
 14089	*	*	f9f7	*	*	*	*	255c	e2959c	255c	0000255c	f9f7	*	*	*	*	*	f9f7
 14090	*	*	f9f8	*	*	*	*	2551	e29591	2551	00002551	f9f8	*	*	*	*	*	f9f8
-14091	*	*	f9f9	*	*	*	*	*	*	*	*	f9f9	*	*	*	*	*	f9f9
+14091	*	*	f9f9	*	*	*	*	*	e29590	2550	00002550	f9f9	*	*	*	*	*	f9f9
 14092	*	*	f9fa	*	*	*	*	*	*	*	*	f9fa	*	*	*	*	*	f9fa
 14093	*	*	f9fb	*	*	*	*	*	*	*	*	f9fb	*	*	*	*	*	f9fb
 14094	*	*	f9fc	*	*	*	*	*	*	*	*	f9fc	*	*	*	*	*	f9fc
@@ -16308,7 +16308,7 @@ CID	B5	B5pc	ETen-B5	ETenms-B5	CNS1	CNS2	CNS-EUC	UniCNS-UCS2	UniCNS-UTF8	UniCNS-U
 16197	*	*	*	*	*	*	*	9159	e98599,eeb78a	9159,edca	00009159,0000edca	9fae	fe61	8efc	9fae	*	*	9fae
 16198	*	*	*	*	*	*	*	9681	e99a81,eeb78b	9681,edcb	00009681,0000edcb	9faf	fea3	90dd	9faf	*	*	9faf
 16199	*	*	*	*	*	*	*	915c	e9859c,eeb78c	915c,edcc	0000915c,0000edcc	9fb0	fe60	8f41	9fb0	*	*	9fb0
-16200	*	*	*	*	*	*	*	*	eeb78d	edcd	0000edcd	9fb1	fe5f	90ce	9fb1	*	*	9fb1
+16200	*	*	*	*	*	*	*	*	f0ab91b3,eeb78d	d86ddc73,edcd	0002b473,0000edcd	9fb1	fe5f	90ce	9fb1	*	*	9fb1
 16201	*	*	*	*	*	*	*	9151	e98591,eeb78e	9151,edce	00009151,0000edce	9fb2	fe5e	8f45	9fb2	*	*	9fb2
 16202	*	*	*	*	*	*	*	edcf	f0a8ba97,eeb78f	d863de97,edcf	00028e97,0000edcf	9fb3	fe7e	90da	9fb3	*	*	9fb3
 16203	*	*	*	*	*	*	*	637f	e68dbf,eeb790	637f,edd0	0000637f,0000edd0	9fb4	fca1	8ff2	9fb4	*	*	9fb4
@@ -16400,7 +16400,7 @@ CID	B5	B5pc	ETen-B5	ETenms-B5	CNS1	CNS2	CNS-EUC	UniCNS-UCS2	UniCNS-UTF8	UniCNS-U
 16289	*	*	*	*	*	*	*	44b7	e492b7,eeb8ae	44b7,ee2e	000044b7,0000ee2e	a053	fdeb	90a2	a053	*	*	a053
 16290	*	*	*	*	*	*	*	*	eeb8af	ee2f	0000ee2f	a054	fb5e,fddc	90af	a054	*	fc7e	a054
 16291	*	*	*	*	*	*	*	ee31	f0a6b885,eeb8b1	d85bde05,ee31	00026e05,0000ee31	a056	fdf5	907c	a056	*	*	a056
-16292	*	*	*	*	*	*	*	*	eeb8b2	ee32	0000ee32	a057	fce7	91ee	a057	*	*	a057
+16292	*	*	*	*	*	*	*	*	f0aab9a7,eeb8b2	d86bde67,ee32	0002ae67,0000ee32	a057	fce7	91ee	a057	*	*	a057
 16293	*	*	*	*	*	*	*	8a7e	e8a9be,eeb8b3	8a7e,ee33	00008a7e,0000ee33	a058	fe43	90b7	a058	*	*	a058
 16294	*	*	*	*	*	*	*	ee34	f0a2949b,eeb8b4	d849dd1b,ee34	0002251b,0000ee34	a059	fc59	9244	a059	*	*	a059
 16295	*	*	*	*	*	*	*	*	eeb8b5	ee35	0000ee35	a05a	fc5e	91ce	a05a	*	*	a05a
@@ -17294,7 +17294,7 @@ CID	B5	B5pc	ETen-B5	ETenms-B5	CNS1	CNS2	CNS-EUC	UniCNS-UCS2	UniCNS-UTF8	UniCNS-U
 17183	*	*	*	*	*	*	*	f454	f0a0b5bc,ef9194	d843dd7c,f454	00020d7c,0000f454	8a57	*	*	8a57	*	*	8a57
 17184	*	*	*	*	*	*	*	f455	f0a0beb4,ef9195	d843dfb4,f455	00020fb4,0000f455	8a58	*	*	8a58	*	*	8a58
 17185	*	*	*	*	*	*	*	f456	f0a0b395,ef9196	d843dcd5,f456	00020cd5,0000f456	8a59	*	*	8a59	*	*	8a59
-17186	*	*	*	*	*	*	*	*	*	*	*	*	*	*	8a5a	*	*	*
+17186	*	*	*	*	*	*	*	*	f0abaab3	d86edeb3	0002bab3	*	*	*	8a5a	*	*	*
 17187	*	*	*	*	*	*	*	648d	e6928d,ef9198	648d,f458	0000648d,0000f458	8a5b	*	*	8a5b	*	*	8a5b
 17188	*	*	*	*	*	*	*	8e7e	e8b9be,ef9199	8e7e,f459	00008e7e,0000f459	8a5c	*	*	8a5c	*	*	8a5c
 17189	*	*	*	*	*	*	*	f45a	f0a0ba96,ef919a	d843de96,f45a	00020e96,0000f45a	8a5d	*	*	8a5d	*	fac4	8a5d
@@ -17321,7 +17321,7 @@ CID	B5	B5pc	ETen-B5	ETenms-B5	CNS1	CNS2	CNS-EUC	UniCNS-UCS2	UniCNS-UTF8	UniCNS-U
 17210	*	*	*	*	*	*	*	f46f	f0a2b584,ef91af	d84bdd44,f46f	00022d44,0000f46f	8a72	*	*	8a72	*	*	8a72
 17211	*	*	*	*	*	*	*	9d6e	e9b5ae,ef91b0	9d6e,f470	00009d6e,0000f470	8a73	*	*	8a73	*	*	8a73
 17212	*	*	*	*	*	*	*	9815	e9a095,ef91b1	9815,f471	00009815,0000f471	8a74	*	*	8a74	*	*	8a74
-17213	*	*	*	*	*	*	*	*	*	*	*	*	*	*	8a75	*	*	*
+17213	*	*	*	*	*	*	*	*	f0abb397	d86fdcd7	0002bcd7	*	*	*	8a75	*	*	*
 17214	*	*	*	*	*	*	*	43d9	e48f99,ef91b3	43d9,f473	000043d9,0000f473	8a76	*	*	8a76	*	*	8a76
 17215	*	*	*	*	*	*	*	*	*	*	*	*	*	*	8a77	*	*	*
 17216	*	*	*	*	*	*	*	64b4	e692b4,ef91b5	64b4,f475	000064b4,0000f475	8a78	*	*	8a78	*	*	8a78
@@ -17330,7 +17330,7 @@ CID	B5	B5pc	ETen-B5	ETenms-B5	CNS1	CNS2	CNS-EUC	UniCNS-UCS2	UniCNS-UTF8	UniCNS-U
 17219	*	*	*	*	*	*	*	f478	ef91b8,f0a2af8a	d84adfca,f478	0000f478,00022bca	8a7b	*	*	8a7b	*	*	8a7b
 17220	*	*	*	*	*	*	*	*	*	*	*	*	*	*	8a7c	*	*	*
 17221	*	*	*	*	*	*	*	39fb	e3a7bb,ef91ba	39fb,f47a	000039fb,0000f47a	8a7d	*	*	8a7d	*	*	8a7d
-17222	*	*	*	*	*	*	*	*	*	*	*	*	*	*	8a7e	*	*	*
+17222	*	*	*	*	*	*	*	*	f0aba5b7	d86edd77	0002b977	*	*	*	8a7e	*	*	*
 17223	*	*	*	*	*	*	*	f47c	f0a69b9a,ef91bc	d859deda,f47c	000266da,0000f47c	8aa1	*	*	8aa1	*	*	8aa1
 17224	*	*	*	*	*	*	*	f47d	f0a69c96,ef91bd	d859df16,f47d	00026716,0000f47d	8aa2	*	*	8aa2	*	*	8aa2
 17225	*	*	*	*	*	*	*	f47e	f0a7a6a0,ef91be	d85edda0,f47e	000279a0,0000f47e	8aa3	*	*	8aa3	*	*	8aa3
@@ -17374,7 +17374,7 @@ CID	B5	B5pc	ETen-B5	ETenms-B5	CNS1	CNS2	CNS-EUC	UniCNS-UCS2	UniCNS-UTF8	UniCNS-U
 17263	*	*	*	*	*	*	*	f4a4	f0aa9881,ef92a4	d869de01,f4a4	0002a601,0000f4a4	8ac9	*	*	8ac9	*	*	8ac9
 17264	*	*	*	*	*	*	*	f4a5	f0a0b889,ef92a5	d843de09,f4a5	00020e09,0000f4a5	8aca	*	*	8aca	*	*	8aca
 17265	*	*	*	*	*	*	*	f4a6	f0a2ab8f,ef92a6	d84adecf,f4a6	00022acf,0000f4a6	8acb	*	*	8acb	*	*	8acb
-17266	*	*	*	*	*	*	*	*	*	*	*	*	*	*	8acc	*	*	*
+17266	*	*	*	*	*	*	*	*	f0ac97b8	d871ddf8	0002c5f8	*	*	*	8acc	*	*	*
 17267	*	*	*	*	*	*	*	*	*	*	*	*	*	*	8acd	*	*	*
 17268	*	*	*	*	*	*	*	f4a9	f0a18388,ef92a9	d844dcc8,f4a9	000210c8,0000f4a9	8ace	*	*	8ace	*	*	8ace
 17269	*	*	*	*	*	*	*	f4aa	f0a3a782,ef92aa	d84eddc2,f4aa	000239c2,0000f4aa	8acf	*	*	8acf	*	*	8acf
@@ -17391,7 +17391,7 @@ CID	B5	B5pc	ETen-B5	ETenms-B5	CNS1	CNS2	CNS-EUC	UniCNS-UCS2	UniCNS-UTF8	UniCNS-U
 17280	*	*	*	*	*	*	*	34bc	e392bc,ef92b5	34bc,f4b5	000034bc,0000f4b5	8ada	*	*	8ada	*	*	8ada
 17281	*	*	*	*	*	*	*	6c3d	e6b0bd,ef92b6	6c3d,f4b6	00006c3d,0000f4b6	8adb	*	*	8adb	*	*	8adb
 17282	*	*	*	*	*	*	*	f4b7	f0a4b8bb,ef92b7	d853de3b,f4b7	00024e3b,0000f4b7	8adc	*	*	8adc	*	*	8adc
-17283	*	*	*	*	*	*	*	*	*	*	*	*	*	*	8add	*	*	*
+17283	*	*	*	*	*	*	*	*	f0aca6a0	d872dda0	0002c9a0	*	*	*	8add	*	*	*
 17284	*	*	*	*	*	*	*	*	*	*	*	*	*	*	8ade	*	*	*
 17285	*	*	*	*	*	*	*	f4ba	f0a795b4,ef92ba	d85ddd74,f4ba	00027574,0000f4ba	8adf	*	*	8adf	*	*	8adf
 17286	*	*	*	*	*	*	*	f4bb	f0a2ba8b,ef92bb	d84bde8b,f4bb	00022e8b,0000f4bb	8ae0	*	*	8ae0	*	*	8ae0
@@ -17494,7 +17494,7 @@ CID	B5	B5pc	ETen-B5	ETenms-B5	CNS1	CNS2	CNS-EUC	UniCNS-UCS2	UniCNS-UTF8	UniCNS-U
 17383	*	*	*	*	*	*	*	8e71	e8b9b1,eea994	8e71,ea54	00008e71,0000ea54	99e6	*	*	*	c8ca	fcb4	99e6
 17384	*	*	*	*	*	*	*	ec44	eeb184,f0a88689	d860dd89,ec44	0000ec44,00028189	9d40	*	*	*	c8cb	fcb5	9d40
 17385	*	*	*	*	*	*	*	8eb0	e8bab0,eea996	8eb0,ea56	00008eb0,0000ea56	99e8	*	*	*	c8cd	fcb7	99e8
-17386	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	fcbf	*
+17386	*	*	*	*	*	*	*	*	f0ab90ac	d86ddc2c	0002b42c	*	*	*	*	*	fcbf	*
 17387	*	*	*	*	*	*	*	915e	e9859e,ef8fab	915e,f3eb	0000915e,0000f3eb	89ad	fe62	90c8	*	*	fcc1	89ad
 17388	*	*	*	*	*	*	*	918c	e9868c,ef8fa9	918c,f3e9	0000918c,0000f3e9	89ab	*	*	*	*	fcc5	89ab
 17389	*	*	*	*	*	*	*	990e	e9a48e,eeaa93	990e,ea93	0000990e,0000ea93	9a66	*	*	*	*	fcda	9a66
@@ -17740,7 +17740,7 @@ CID	B5	B5pc	ETen-B5	ETenms-B5	CNS1	CNS2	CNS-EUC	UniCNS-UCS2	UniCNS-UTF8	UniCNS-U
 17629	*	*	*	*	*	*	*	f317	e3878d,ef8c97	31cd,f317	000031cd,0000f317	8854	*	*	*	*	*	8854
 17630	*	*	*	*	*	*	*	f318	e3878e,ef8c98	31ce,f318	000031ce,0000f318	8855	*	*	*	*	*	8855
 17631	*	*	*	*	*	*	*	*	ef94b8	f538	0000f538	8bc0	*	*	*	*	*	8bc0
-17632	*	*	*	*	*	*	*	*	ef94b9	f539	0000f539	8bc1	*	*	*	*	*	8bc1
+17632	*	*	*	*	*	*	*	*	e5a48a,ef94b9	590a,f539	0000590a,0000f539	8bc1	*	*	*	*	*	8bc1
 17633	*	*	*	*	*	*	*	f53a	f0a1af81,ef94ba	d846dfc1,f53a	00021bc1,0000f53a	8bc2	*	*	*	*	*	8bc2
 17634	*	*	*	*	*	*	*	f53b	f0afa1b8,ef94bb	d87edc78,f53b	0002f878,0000f53b	8bc3	*	*	*	*	*	8bc3
 17635	*	*	*	*	*	*	*	9751	e2bead,e99d91,ef94bc	2fad,9751,f53c	00002fad,00009751,0000f53c	8bc4	*	*	*	*	*	8bc4

@@ -1,4 +1,4 @@
-# cid2code.txt (Version 08/28/2009)
+# cid2code.txt (Version 10/29/2010)
 #
 # The data in this table contains 14 tab-delimited columns of
 # information. The contents of this file supplement Technical Note
@@ -84,7 +84,7 @@
 #
 CID	GB	GB-EUC	GBpc-EUC	GBT	GBT-EUC	GBTpc-EUC	GBK-EUC	GBKp-EUC	GBK2K	UniGB-UCS2	UniGB-UTF8	UniGB-UTF16	UniGB-UTF32
 0	*	*	*	*	*	*	*	*	*	*	*	*	*
-1	*	*	20	*	*	20	*	20	20	0020	20	0020	00000020
+1	*	*	20	*	*	20	*	20	20	0020	c2a0,20	00a0,0020	000000a0,00000020
 2	*	*	21	*	*	21	*	21	21	0021	21	0021	00000021
 3	*	*	22	*	*	22	*	22	22	0022	22	0022	00000022
 4	*	*	23	*	*	23	*	23	23	0023	23	0023	00000023
@@ -182,7 +182,7 @@ CID	GB	GB-EUC	GBpc-EUC	GBT	GBT-EUC	GBTpc-EUC	GBK-EUC	GBKp-EUC	GBK2K	UniGB-UCS2	U
 96	2121	a1a1	a1a1	2121	a1a1	a1a1	a1a1	a1a1	a1a1	3000	e38080	3000	00003000
 97	2122	a1a2	a1a2	2122	a1a2	a1a2	a1a2	a1a2	a1a2	3001	e38081	3001	00003001
 98	2123	a1a3	a1a3	2123	a1a3	a1a3	a1a3	a1a3	a1a3	3002	e38082	3002	00003002
-99	2124	a1a4	a1a4	2124	a1a4	a1a4	a1a4	a1a4	a1a4	30fb	c2b7,e383bb	00b7,30fb	000000b7,000030fb
+99	2124	a1a4	a1a4	2124	a1a4	a1a4	a1a4	a1a4	a1a4	30fb	c2b7,e280a2,e383bb	00b7,2022,30fb	000000b7,00002022,000030fb
 100	2125	a1a5	a1a5	2125	a1a5	a1a5	a1a5	a1a5	a1a5	02c9	cb89	02c9	000002c9
 101	2126	a1a6	a1a6	2126	a1a6	a1a6	a1a6	a1a6	a1a6	02c7	cb87	02c7	000002c7
 102	2127	a1a7	a1a7	2127	a1a7	a1a7	a1a7	a1a7	a1a7	00a8	c2a8	00a8	000000a8
@@ -22445,9 +22445,9 @@ CID	GB	GB-EUC	GBpc-EUC	GBT	GBT-EUC	GBTpc-EUC	GBK-EUC	GBKp-EUC	GBK2K	UniGB-UCS2	U
 22359	*	*	*	*	*	*	*	*	a4a1v	*	*	*	*
 22360	*	*	*	*	*	*	*	*	a4a7v	*	*	*	*
 22361	*	*	*	*	*	*	*	*	a4a3v	*	*	*	*
-22362	*	*	*	*	*	*	*	*	*	*	*	*	*
+22362	*	*	*	*	*	*	*	*	*	*	e38295	3095	00003095
 22363	*	*	*	*	*	*	*	*	*	*	*	*	*
-22364	*	*	*	*	*	*	*	*	*	*	*	*	*
+22364	*	*	*	*	*	*	*	*	*	*	e38296	3096	00003096
 22365	*	*	*	*	*	*	*	*	*	*	*	*	*
 22366	*	*	*	*	*	*	*	*	*	*	*	*	*
 22367	*	*	*	*	*	*	*	*	*	*	*	*	*
